@@ -1,0 +1,35 @@
+version: '2'
+services:
+
+  mysql:
+    image: mysql:5.7
+    env_file:
+      - .env
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - $PWD/mysql/conf.d:/etc/mysql/conf.d:ro
+      - $PWD/mysql/initdb.d:/docker-entrypoint-initdb.d:ro
+      - db-storage:/var/lib/mysql
+      - $PWD/mysql/log:/var/log/mysql
+
+  php:
+    build: ./php
+    ports:
+      - '2000:80'
+    depends_on:
+      - mysql
+    links:
+      - mysql:mysql.db
+    env_file:
+      - .env
+    environment:
+      - DB_HOST=mysql.db
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - $PWD/www:/var/www/html
+      - $PWD/php/log:/var/log/apache2
+      - $PWD/php/conf:/usr/local/etc/php
+
+volumes:
+  db-storage:
+    driver: local

@@ -1,0 +1,5 @@
+172.18.0.1 - - [23/Feb/2017:18:41:56 +0000] "GET / HTTP/1.1" 200 240 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/602.4.8 (KHTML, like Gecko) Version/10.0.3 Safari/602.4.8"
+172.18.0.1 - - [23/Feb/2017:18:41:56 +0000] "GET /favicon.ico HTTP/1.1" 404 503 "http://localhost:2000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/602.4.8 (KHTML, like Gecko) Version/10.0.3 Safari/602.4.8"
+172.18.0.1 - - [23/Feb/2017:18:41:58 +0000] "GET / HTTP/1.1" 200 239 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/602.4.8 (KHTML, like Gecko) Version/10.0.3 Safari/602.4.8"
+172.18.0.1 - - [23/Feb/2017:18:42:19 +0000] "GET / HTTP/1.1" 200 401 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/602.4.8 (KHTML, like Gecko) Version/10.0.3 Safari/602.4.8"
+172.18.0.1 - - [23/Feb/2017:18:42:23 +0000] "GET / HTTP/1.1" 200 244 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/602.4.8 (KHTML, like Gecko) Version/10.0.3 Safari/602.4.8"
